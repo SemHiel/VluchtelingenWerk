@@ -1,0 +1,117 @@
+import time
+
+time.sleep(1)
+print("")
+print(" __     ___            _     _       _ _                     __        __        _    ")
+print(" \ \   / / |_   _  ___| |__ | |_ ___| (_)_ __   __ _  ___ _ _\ \      / /__ _ __| | __")
+print("  \ \ / /| | | | |/ __| '_ \| __/ _ \ | | '_ \ / _` |/ _ \ '_ \ \ /\ / / _ \ '__| |/ /")
+print("   \ V / | | |_| | (__| | | | ||  __/ | | | | | (_| |  __/ | | \ V  V /  __/ |  |   < ")
+print("    \_/  |_|\__,_|\___|_| |_|\__\___|_|_|_| |_|\__, |\___|_| |_|\_/\_/ \___|_|  |_|\_\ ")
+print("                                               |___/                                  ")
+print("")
+time.sleep(1)
+print("Welkom bij het Programma.")
+time.sleep(1)
+print("Hoi, ik ben Sem. Wat is jou naam?")
+naam = input()
+
+def verhaal():
+    print("Aangenaam,", naam, "Zullen we beginnen? Ja/Nee")
+    beginnen = input().lower()
+    if beginnen == "ja":
+            print("Kamal (9) is met zijn vriend te spelen voor hun huis. Plotseling zien ze meerdere IS Strijders aankomen rijden.")
+            print("Wat moet Kamal doen?")
+            print("1. Hij rent weg. 2. Hij blijft met zijn vriend spelen. 3. Hij rent snel naar binnen.")
+            kamal1 = input()
+            if kamal1 == "1":
+                print("Goedzo! Kamal is veilig. Hij blijft wel in de buurt van zijn huis zodat hij weet wanneer ze weg zijn.")
+            elif kamal1 == "2":
+                print("Oops! Kamal word gevangen genomen omdat hij de zoon is van een rijke diplomaat in Syrie.")
+                print("Ze eisen nu losgeld!")
+            else:
+                print("Oops! De IS strijders stormen het huis binnen om jou gevangen te nemen en de locatie van je familie is nu ook bekend.")
+                time.sleep(2)
+                print("Je zit nu gevangen in een ISIS kamp. Je word hier getraind om een ISIS soldaat te worden...")
+                time.sleep(2)
+                print("Het is nacht en je kan niet slapen omdat je je familie mist...")
+                time.sleep(3)
+                print("Maar je ziet dat de deur niet opslot gedaan is. Dat is mooi!")
+                time.sleep(3)
+                print("Je loopt de deur uit en zoekt voor een uitgang...")
+                time.sleep(3)
+                print("Plots zie je een gat in het ahek. Ga je proberen te ontsnappen?")
+                time.sleep(3)
+                print("Ja, ik ren snel weg en ga terug naar mijn familie. Nee, het is teveel risico en ik blijf hier...")
+                kamal2 = input().lower()
+                if kamal2 == "ja":
+                    print("Oke! Ik ren heel snel en zachtjes weg naar het gat in de hek.")
+                    time.sleep(3)
+                    print("Top, ik ben eindelijk buiten het kamp, ik ben vrij!")
+                    time.sleep(3)
+                    print("Plots komen er 3 auto's aangereden en staan er wapens op je gericht!")
+                    time.sleep(3)
+                    print("Nee! Je bent vermoord voor verraad.")
+                    time.sleep(3)
+                    print("Wil je het programma opnieuw starten? Ja/Nee")
+                    opnieuw = input().lower()
+                    if opnieuw == "ja":
+                        return verhaal()
+                    elif opnieuw == "nee":
+                        print("Het programma word nu afgesloten.")
+                    else:
+                        print("Geen geldige input. Het programma word afgesloten...")
+                elif kamal2 == "nee":
+                    time.sleep(1)
+                    print("Je gaat weer in je bed liggen... En wacht stilletjes af tot de volgende ochtend...")
+                    time.sleep(1)
+                    print("Een nieuwe dag breekt aan. Dit is jou laatste training...")
+                    print("Het trainingskamp word aangevallen! Wat doe je?")
+                    print("(1) Je probeert te vluchten, (2) Je gaat schuilen.")
+                    kamal3 = input()
+                    if kamal3 == (1):
+                        print("Je ziet het gat in het hek weer...")
+                        time.sleep(1)
+                        print("Je gaat er doorheen en rent zo snel mogelijk richting de stad")
+                        time.sleep(1)
+                        print("Wanneer je in de stad komt ren je snel naar je huis toe...")
+                        time.sleep(2)
+                        print("Je rent naar binnen en schreeuwt 'Mama!' Je loopt naar binnen..")
+                        time.sleep(2)
+                        print("En daar zie je je familie liggen...")
+                        time.sleep(2)
+                        print("Neergeschoten door IS..")
+                        time.sleep(3)
+                        print("Wil je het programma opnieuw starten? Ja/Nee")
+                        opnieuw2 = input().lower()
+                        if opnieuw2 == "ja":
+                            return verhaal()
+                        elif opnieuw2 == "nee":
+                            print("Het programma word afgesloten...")
+                        else:
+                            print("Geen geldige keuzen...")
+                            print("Het programma word afgesloten...")
+                    if kamal3 == (2):
+                        print("Je wacht totdat de schoten voorbij zijn...")
+                        time.sleep(1)
+                        print("Je loopt voorzichtig naar buiten en je ziet dat de IS strijders dood zijn..")
+                        time.sleep(1)
+                        print("Je ziet Amerikaanse soldaten en je schreeuwt 'Help!'")
+                        time.sleep(1)
+                        print("Ze rennen snel naar je toe en geven je Eten en Drinken.")
+                        time.sleep(1)
+                        print("Ze brengen je naar een VluchtelingenKamp aan de turkse grens..")
+                        time.sleep(1)
+                        print("Je merkt daar dat je Oom en Tante er ook zijn.")
+                        print("Eindelijk, ik ben weer bij mijn familie.")
+                        time.sleep(4)
+                        print("Wil je het programma opnieuw starten? Ja/Nee")
+                        keuze3 = input().lower()
+                        if keuze3 == "ja":
+                            return verhaal()
+                        elif keuze3 == "nee":
+                            print("Het programma word afgesloten.")
+                        else:
+                            print("Geen geldige keuze.")
+                            print("Het programma word afgesloten...")
+
+verhaal()
